@@ -1,0 +1,30 @@
+baseURL = "http://www.elfinjohn.com/"
+languageCode = "en-us"
+title = "John Williams, Web Developer"
+
+[permalinks]
+  blog = "/:filename"
+
+[params]
+  homeText = "You just made a Hugo blog from scratch."
+  dateFormat = "Jan 2, 2006"
+
+[taxonomies]
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    pre = "edit"
+    url = "/blog/"
+    weight = 2
+  [[menu.main]]
+    name = "Tags"
+    pre = "tag"
+    url = "/tags/"
+    weight = 3
