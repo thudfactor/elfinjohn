@@ -6,7 +6,7 @@ title = "John Williams, Web Developer"
   blog = "/:filename"
 
 [params]
-  homeText = "You just made a Hugo blog from scratch."
+  homeText = "Not really a designer, tbh."
   dateFormat = "Jan 2, 2006"
 
 [taxonomies]

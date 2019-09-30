@@ -1,0 +1,15 @@
+<div class="media mb-5 {{ .Params.classes }}">
+    {{ partial "cover-image-small.html" . }}
+
+    <div class="media-body">
+        <h2 class="post-title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }}
+            <sup>
+                <i class="fas fa-pen-square fa-xs"></i>
+            </sup>{{ end }}</h2>
+        <span class="post-date">
+            <i class="fas fa-calendar-alt"></i>&nbsp;{{- .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") -}}
+        </span>
+    {{ .Description }}
+    </div>
+</div>

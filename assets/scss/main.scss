@@ -1,0 +1,25 @@
+@import 'now-ui-kit';
+
+html {
+  font-size: 18px;
+}
+
+.logo {
+  height: 24px;
+  width: 128px;
+}
+
+.media {
+  .post-date {
+    color: #666;
+    font-weight: 400;
+    margin-right: .3em;
+
+    &:after {
+      content: '|';
+      display: inline-block;
+      margin-left: .5em;
+      font-style: normal;
+    }
+  }
+}

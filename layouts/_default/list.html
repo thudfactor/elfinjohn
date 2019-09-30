@@ -5,9 +5,7 @@
 {{ .Content }}
 
 {{ range .Pages.ByPublishDate.Reverse }}
-<p>
-  <a class="font-125" href="{{ .RelPermalink }}">{{ .Title }}</a>
-</p>
+  {{ partial "post-loop.html" . }}
 {{ end }}
 
 {{ end }}
