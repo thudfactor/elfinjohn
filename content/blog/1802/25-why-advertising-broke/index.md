@@ -1,5 +1,5 @@
 ---
-title: Advertising abandoned ethics and it’s destroying us
+title: Marketing abandoned ethics and it’s destroying us
 date: 2018-02-25T07:02:26-04:00
 draft: false
 description: Ad networks, niche targeting, and cost-per-click combine to polarize a nation.
