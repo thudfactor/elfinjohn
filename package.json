@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/thudfactor/elfinjohn/issues"
   },
-  "homepage": "https://www.elfinjohn.com"
+  "homepage": "https://www.elfinjohn.com",
+  "devDependencies": {
+    "tailwindcss-responsive-embed": "^0.2.2"
+  }
 }

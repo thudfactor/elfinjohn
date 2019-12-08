@@ -12,6 +12,14 @@ params:
 taxonomies:
   tag: tags
 
+# This configures the markdown renderer. We accept all the default 
+# behavior except stripping HTML out of the content. 
+markup: 
+  goldmark:
+    renderer:
+      unsafe: true
+
+
 menu:
   main:
   - name: About
