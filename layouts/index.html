@@ -1,13 +1,43 @@
 {{ define "main" }}
-    <div class="p-10">
-      <div class="container mx-auto py-20">
-        <h1>{{ .Title }}</h1>
-        <div>
-          {{ range .Site.RegularPages }}
-          {{ partial "post-loop.html" . }}
-          {{ end }}
-        </div>
-      </div>
+  {{ $image := .Resources.GetMatch "cover" }}
+  {{ with $image }} 
+    <div class="md:shadow-xl">
+      {{ $small := $image.Fill "320x160" }}
+      {{ $med := $image.Fill "640x320" }}
+      {{ $lg := $image.Fill "1280x640" }}
+      {{ $xl := $image.Fill "2560x1280" }}
+      <img class="block w-full h-auto" 
+        src="{{ $small.RelPermalink }}" 
+        srcset="
+          {{ $small.RelPermalink }} 320w,
+          {{ $med.RelPermalink }} 640w,
+          {{ $lg.RelPermalink }} 1280w,
+          {{ $xl.RelPermalink }} 2560w,
+        "
+        alt="{{ $image.Params.alt }}" />
     </div>
+  {{ end }}
+  {{ if $image }}
+  <div class="md:-mt-24 lg:-mt-64 relative">
+  {{ else }}
+  <div>
+  {{ end }}
+  <div class="container mx-auto bg-white p-20">
+    <h1>
+      {{ with .Params.supertitle }}
+      <span class="block text-xl uppercase text-gray-800">{{ . }}</span>
+      {{ end }}
+      <span class="block text-3xl">{{ .Title }}</span>
+      {{ with .Params.subtitle }}
+      <span class="block text-xl text-gray-700">{{ . }}</span>
+      {{ end }}      
+    </h1>
+    {{ .Content }}
+    <div>
+      {{ range .Site.RegularPages }}
+      {{ partial "post-loop.html" . }}
+      {{ end }}
+    </div>
+  </div>
 {{ end }}
 
