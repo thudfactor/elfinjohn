@@ -1,6 +1,44 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ partial "date-and-tags.html" . }}
-<br><br>
-{{ .Content }}
+{{ $image := .Resources.GetMatch "cover" }}
+{{ with $image }} 
+  <div class="md:shadow-xl">
+    {{ $small := $image.Fill "320x160" }}
+    {{ $med := $image.Fill "640x320" }}
+    {{ $lg := $image.Fill "1280x640" }}
+    {{ $xl := $image.Fill "2560x1280" }}
+    <img class="block w-full h-auto" 
+      src="{{ $small.RelPermalink }}" 
+      srcset="
+        {{ $small.RelPermalink }} 320w,
+        {{ $med.RelPermalink }} 640w,
+        {{ $lg.RelPermalink }} 1280w,
+        {{ $xl.RelPermalink }} 2560w,
+      "
+      alt="{{ $image.Params.alt }}" />
+  </div>
+{{ end }}
+{{ if $image }}
+<div class="md:-mt-64 relative">
+{{ else }}
+<div>
+{{ end }}
+  <article class="lg:flex bg-white lg:items-start container mx-auto p-20">
+    <div class="flex-2/5 pb-10 border-b-2 mb-10 lg:mb-0 lg:pb-0 lg:border-b-0 lg:pr-10 lg:border-r-2">
+      <h1 class="text-3xl lg:text-right">{{ .Title }}</h1>
+      {{ if .PublishDate }}
+        <div class="my-10 lg:text-right">
+          {{ $dateTime := .PublishDate.Format "2006-01-02" }}
+          {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+          <i data-feather="calendar"></i> <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+        </div>
+      {{ end }}
+      {{ if .Description }}
+        <p class="mt-10 lg:text-right">{{ .Description }}</p>
+      {{ end }}
+    </div>
+    <div class="editorial flex-3/5 lg:pl-10 text-lg xl:text-xl">
+      {{ .Content }}
+    </div>
+  </article>
+</div>
 {{ end }}

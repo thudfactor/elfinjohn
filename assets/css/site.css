@@ -1,0 +1,14 @@
+.editorial p {
+  @apply mb-5;
+}
+
+.editorial ol {
+  @apply ml-10 mb-5;
+  list-style-type: decimal;
+}
+
+.editorial ul li {
+  @apply ml-10 mb-5;
+  list-style-type: disc;
+}
+
