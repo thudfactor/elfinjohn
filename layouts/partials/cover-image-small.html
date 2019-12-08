@@ -1,5 +1,0 @@
-{{ $image := .Resources.GetMatch "cover" }}
-{{ with $image }} 
-    {{ $small := $image.Fill "240x180" }}
-    <img class="block" src="{{ $small.RelPermalink }}" alt="{{ $image.Params.alt }}" />
-{{ end }}
