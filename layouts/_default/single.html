@@ -23,20 +23,20 @@
 <div>
 {{ end }}
   <article class="lg:flex bg-white lg:items-start container mx-auto p-20">
-    <div class="flex-2/5 pb-10 border-b-2 mb-10 lg:mb-0 lg:pb-0 lg:border-b-0 lg:pr-10 lg:border-r-2">
-      <h1 class="text-3xl lg:text-right">{{ .Title }}</h1>
+    <div class="flex-2/5 bg-gray-100 p-5 border-b-2 mb-10 lg:mb-0 lg:border-b-0 lg:border-r-2">
+      <h1 class="text-3xl leading-tight font-thin font-display">{{ .Title }}</h1>
       {{ if .PublishDate }}
-        <div class="my-10 lg:text-right">
+        <div class="mt-10 mb-2 text-sm italic font-bold text-gray-600">
           {{ $dateTime := .PublishDate.Format "2006-01-02" }}
           {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
-          <i data-feather="calendar"></i> <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+          <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
         </div>
       {{ end }}
       {{ if .Description }}
-        <p class="mt-10 lg:text-right">{{ .Description }}</p>
+        <p class="mt-2 text-gray-700 font-black">{{ .Description }}</p>
       {{ end }}
     </div>
-    <div class="editorial flex-3/5 lg:pl-10 text-lg xl:text-xl">
+    <div class="editorial font-serif text-gray-900 font-medium flex-3/5 lg:pl-10 text-xl xl:text-2xl">
       {{ .Content }}
     </div>
   </article>
