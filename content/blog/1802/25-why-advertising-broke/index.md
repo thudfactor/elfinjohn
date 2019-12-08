@@ -7,7 +7,7 @@ resources:
     - name: cover
       src: island.jpg
       params:
-        alt: Arial view of a modern shopping complex with dark clouds in the distance.
+        alt: View of a modern shopping complex with dark clouds in the distance.
         caption: This view high above Pigeon Forge, Tennessee was taken from inside the giant Ferris wheel at The Island, a shopping complex / arcade near Dollywood.
 ---
 

@@ -1,15 +1,20 @@
-<div class="media mb-5 {{ .Params.classes }}">
-    {{ partial "cover-image-small.html" . }}
-
-    <div class="media-body">
-        <h2 class="post-title">
-            <a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }}
-            <sup>
-                <i class="fas fa-pen-square fa-xs"></i>
-            </sup>{{ end }}</h2>
-        <span class="post-date">
-            <i class="fas fa-calendar-alt"></i>&nbsp;{{- .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") -}}
-        </span>
+<div class="md:flex py-10 justify-between items-start border-b-2 border-gray-200 clearfix">
+  
+  {{ $image := .Resources.GetMatch "cover" }}
+  {{ with $image }} 
+    <div class="mb-10 md:m-0 md:order-last md:float-none md:border-2 flex-none border-gray-400" >
+      {{ $small := $image.Fill "240x180" }}
+      <img class="block" src="{{ $small.RelPermalink }}" alt="{{ $image.Params.alt }}" />
+    </div>
+  {{ end }}
+  
+  <div class="lg:flex md:pr-10">
+    <h2 class="lg:w-64 flex-none">
+      <a class="text-2xl underline text-blue-700 font-bold" href="{{ .Permalink }}">{{ .Title }}</a>
+      <span class="block text-lg text-gray-700 italic">{{- .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") -}}</span>
+    </h2>
+    <div class="lg:px-10 text-2xl">
     {{ .Description }}
     </div>
+  </div>
 </div>

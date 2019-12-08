@@ -1,5 +1,5 @@
 {{ $image := .Resources.GetMatch "cover" }}
 {{ with $image }} 
-    {{ $small := $image.Fill "120x120" }}
-    <img class="mr-3" src="{{ $small.RelPermalink }}" alt="{{ $image.Params.alt }}" />
+    {{ $small := $image.Fill "240x180" }}
+    <img class="block" src="{{ $small.RelPermalink }}" alt="{{ $image.Params.alt }}" />
 {{ end }}

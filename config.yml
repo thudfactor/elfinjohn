@@ -1,0 +1,22 @@
+baseURL: "https://www.elfinjohn.com/"
+languageCode: en-us
+title: John Williams, Web Developer
+
+permalinks:
+  blog: "/:year/:month/:slug"
+
+params:
+  homeText: Not really a designer, tbh.
+  dateFormat: Jan 2, 2006
+
+taxonomies:
+  tag: tags
+
+menu:
+  main:
+  - name: Blog
+    url: /blog/
+  - name: Projects
+    url: /projects/
+  - name: Experiments
+    url: /experiments/

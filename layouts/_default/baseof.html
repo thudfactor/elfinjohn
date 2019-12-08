@@ -3,16 +3,14 @@
   {{ partial "head.html" . }}  
   <body>
     {{ partial "nav.html" . }}
-    <div class="container">
-      <main id="main">
-       {{ block "main" . }}{{ end }}
-      </main>
-    </div>
-    {{ partial "script.html" }}
-    <div class="bg-dark text-light py-4 mt-5">
-      <div class="container">
-      <p>Contents &copy; their respective publication dates or 2019. This John Williams did not write the theme to Star Wars. “Elfin John” was originally a Tim Conway character.</p>
+    <div class="p-10">
+      <div class="container mx-auto py-20">
+        <main id="main">
+        {{ block "main" . }}{{ end }}
+        </main>
       </div>
     </div>
+    {{ partial "footer.html" }}
+    {{ partial "script.html" }}    
   </body>
 </html>
