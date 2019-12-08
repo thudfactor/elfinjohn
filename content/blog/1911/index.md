@@ -1,7 +1,8 @@
 ---
-title: A Allegory on Wimmen’s Rights 
+title: “A Allegory on Wimmen’s Rights”
 date: 2019-11-26T06:30:35-04:00
 description: A 1911 pamphlet (which is the 20th century way of saying “blog post”) about the rights of women compared to the others the government deems unfit to participate in democratic action. 
+draft: true
 ---
 
 Before there were blogs, there were pamphlets. This one shows its age in it’s determined use of dialect and less-than-sensitive language about people with mental illness and developmental disorders, but other than that it’s surprising how much it resembles the stuff that gets screen-shotted and circulated on Facebook and Twitter.
