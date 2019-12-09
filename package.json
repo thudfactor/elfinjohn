@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.3.0",
+    "tailwindcss-responsive-embed": "^0.2.2",
     "autoprefixer": "^9.7.3",
     "postcss": "^7.0.23",
     "postcss-cli": "^6.1.3",
@@ -30,8 +31,5 @@
   "bugs": {
     "url": "https://github.com/thudfactor/elfinjohn/issues"
   },
-  "homepage": "https://www.elfinjohn.com",
-  "devDependencies": {
-    "tailwindcss-responsive-embed": "^0.2.2"
-  }
+  "homepage": "https://www.elfinjohn.com"
 }
