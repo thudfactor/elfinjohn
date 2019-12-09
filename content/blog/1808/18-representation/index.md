@@ -10,9 +10,9 @@ resources:
         alt: A close-up of a screech owl.
 ---
 
-Yesterday we were watching music on YouTube with our sixth-grader. I've been playing ukulele every now and then, and there's this great video of [Jake Shimabukuro's uke cover of "Get Lucky."](https://www.youtube.com/watch?v=VbTrdj7vPGU). So then we had to watch the original video. And then, so our child who is just becoming somewhat interested in these things could understand who Pharrell Williams was, we watched the music video for "Happy." Somehow I had never seen it before. 
+Yesterday we were watching music on YouTube with our sixth-grader. I've been playing ukulele every now and then, and there's this great video of [Jake Shimabukuro's uke cover of "Get Lucky."](https://www.youtube.com/watch?v=VbTrdj7vPGU). So then we had to watch the original video. And then, so our child who is just becoming somewhat interested in these things could understand who Pharrell Williams was, we watched the music video for "Happy." Somehow I had never seen it before.
 
-<iframe width="1206" height="678" src="https://www.youtube.com/embed/ZbZSe6N_BXs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+{{% youtube tag="ZbZSe6N_BXs" %}}
 
 I reproduce that here because the video has fat dancers who get to dance just like everyone else. It's not played for laughs. There are no prop roast chickens or giant sandwiches. Williams's video celebrates the diversity of happy people. Fat people included.
 

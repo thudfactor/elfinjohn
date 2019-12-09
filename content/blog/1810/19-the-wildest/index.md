@@ -31,4 +31,5 @@ I didn't think I knew Prima, but his voice sounded awfully familiar. At first I 
 
 This has rapidly become one of my favorite albums; definitely check it out.
 
-<iframe width="953" height="715" src="https://www.youtube.com/embed/9JDzlhW3XTM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+{{% youtube tag="9JDzlhW3XTM" %}}
+

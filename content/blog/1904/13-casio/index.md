@@ -39,9 +39,7 @@ I think this would probably have explained a lot to Ms. Sweeney had she known.
 
 Anyway, I had almost entirely forgotten about it except for the rare instances where I'd run across this song, which uses the VL-Tone's "swing" rhythm:
 
-<div class="embed-responsive aspect-ratio-4/3 my-10">
-    <iframe class="embed-responsive-item" width="753" height="565" src="https://www.youtube.com/embed/lNYcviXK4rg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{% youtube tag="lNYcviXK4rg" %}}
 
 In the last year and a half, I've gone a lot deeper into the world of music production and composition than I ever anticipated I would, so the sixth voice, which I always called "the addsir" because it was labeled "ADSR." That actually stands for "Attack, Decay, Sustain, Release" and those are the four values that typically make up a note "envelope." makes a lot more sense to me now. I broke out the manual (which was still with the keyboard!) and looked up how to use it. Today, for the first time ever, I got a sound out the ADSR voice that didn't sound like a frog swallowing its tongue.
 
@@ -49,9 +47,7 @@ Another first with the VL-Tone today: I'd always played it through either headph
 
 And what does that sound like?
 
-<div class="embed-responsive aspect-ratio-4/3 my-10">
-    <iframe class="embed-responsive-item" width="753" height="424" src="https://www.youtube.com/embed/H59GG0gn_HM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{% youtube tag="H59GG0gn_HM" %}}
 
 What you're hearing there is the power of (only!) one VCO (voltage controlled oscillator), which I know thanks to this [contemptuous review](http://www.vintagesynth.com/casio/vl1.php) I found. Not that he's wrong. But for me, in third grade, this seemed so much more than a toy. Regardless of what the youtube video above says, the VL-Tone retailed for $80 in 1979, back when a McDonald's Happy Meal was $1 and the average rent was less than $300. And it was the closest thing to a real instrument I had for many many years.
 

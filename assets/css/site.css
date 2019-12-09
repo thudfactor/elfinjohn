@@ -71,3 +71,11 @@
   @apply my-10;
 }
 
+.editorial a {
+  @apply underline font-bold text-orange-700;
+}
+
+.editorial a:hover {
+  @apply text-orange-600;
+}
+
