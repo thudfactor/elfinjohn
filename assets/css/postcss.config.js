@@ -1,6 +1,6 @@
 class TailwindExtractor {
 	static extract(content) {
-		return content.match(/[A-z0-9-:\/]+/g)
+		return content.match(/[\w-/:]+(?<!:)/g)
 	}
 }
 
@@ -18,7 +18,7 @@ module.exports = {
         extensions: ['html']
       }], 
       fontFace: false,
-      whitelist: ['class1', 'class2']
+      whitelist: ['aspect-ratio-4/3', 'class2']
     }),    
     require('autoprefixer')({
       grid: true,
