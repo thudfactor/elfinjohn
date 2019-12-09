@@ -11,7 +11,7 @@ module.exports = {
     }), 
     require('tailwindcss'),
     require('@fullhuman/postcss-purgecss')({
-      content: ['layouts/**/*.html'],
+      content: ['layouts/**/*.html','content/**/*.md'],
       extractors: [
       {
         extractor: TailwindExtractor,
