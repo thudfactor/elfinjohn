@@ -143,7 +143,7 @@
 
 @supports (background-blend-mode: multiply) {
   .bg-paisley-gray {
-    background: rgb(45,55,72) url('/img/paisley-low.jpg') scroll no-repeat 50% 50% / cover;
+    background: #2d3748 url('/img/paisley-low.jpg') scroll no-repeat 50% 50% / cover;
     background-blend-mode: multiply;
   }
 }
