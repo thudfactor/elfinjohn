@@ -2,18 +2,18 @@
   
   {{ $image := .Resources.GetMatch "cover" }}
   {{ with $image }} 
-    <div class="mb-10 md:m-0 md:order-last md:float-none md:border-2 flex-none border-gray-400" >
+    <div class="md:shadow-xl mb-10 md:m-0 md:float-none md:border-2 flex-none border-gray-400" >
       {{ $small := $image.Fill "240x180" }}
-      <img class="block" src="{{ $small.RelPermalink }}" alt="{{ $image.Params.alt }}" />
+      <a href="{{ .Permalink }}"><img class="block" src="{{ $small.RelPermalink }}" alt="{{ $image.Params.alt }}" /></a>
     </div>
   {{ end }}
   
-  <div class="lg:flex md:pr-10">
-    <h2 class="lg:w-64 flex-none">
-      <a class="text-2xl underline text-blue-700 font-bold" href="{{ .Permalink }}">{{ .Title }}</a>
-      <span class="block text-lg text-gray-700 italic">{{- .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") -}}</span>
+  <div class="pl-10 flex-auto">
+    <h2>
+      <span class="block text-base text-gray-500 italic">{{- .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") -}}</span>
+      <a class="text-2xl font-display underline hover:text-orange-600 text-orange-700" href="{{ .Permalink }}">{{ .Title }}</a>
     </h2>
-    <div class="lg:px-10 text-2xl">
+    <div class="my-5 text-gray-700 text-xl">
     {{ .Description }}
     </div>
   </div>

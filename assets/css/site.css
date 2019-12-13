@@ -33,20 +33,73 @@
   weight: 275 900;
 }
 
+@font-face { 
+  font-family: 'Science Gothic';
+  src: url('/fonts/ScienceGothicVF.ttf') format('truetype-variations');
+  font-style: normal;
+  weight: 100 900;  
+}
+
 .font-sans 	{
   font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
 }
 
 .font-serif 	{
   font-family: "Crimson Pro", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 400;
  }
 
 .font-display {
   font-family: "League Spartan", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+}
+
+.font-weird {
+  font-family: "Science Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+.font-w-ultra-condensed {
+  font-stretch: ultra-condensed;
+}
+
+.font-w-extra-condensed {
+  font-stretch: extra-condensed;
+}
+
+.font-w-condensed {
+  font-stretch: condensed;
+}
+
+.font-w-semi-condensed {
+  font-stretch: semi-condensed;
+}
+
+.font-w-normal {
+  font-stretch: normal;  
+}
+
+.font-w-semi-expanded {
+  font-stretch: semi-expanded;
+}
+
+.font-w-expanded {
+  font-stretch: expanded;
+}
+
+.font-w-extra-expanded {
+  font-stretch: extra-expanded;
+}
+
+.font-w-ultra-expanded {
+  font-stretch: ultra-expanded;
 }
 
 .font-mono 	{
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-weight: 400;
 }
 
 .editorial p {
@@ -78,4 +131,21 @@
 .editorial a:hover {
   @apply text-orange-600;
 }
+
+.bg-paisley-gray {
+  @apply bg-gray-900;  
+}
+
+.terminal {
+  @apply h-32 m-32 mx-auto text-gray-400;
+  transform: rotate(-90deg);
+}
+
+@supports (background-blend-mode: multiply) {
+  .bg-paisley-gray {
+    background: rgb(45,55,72) url('/img/paisley-low.jpg') scroll no-repeat 50% 50% / cover;
+    background-blend-mode: multiply;
+  }
+}
+
 
