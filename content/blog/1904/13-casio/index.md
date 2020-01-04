@@ -14,7 +14,7 @@ resources:
       src: cover.jpg
       params:
         alt: "My Casio VL-Tone"
-        caption: "Although this tiny instrument doesn't look like much, it entertained me for hours."
+        caption: Detail photograph of my own personal Casio VL-Tone. 
 twitter:
     card: "summary_large_image"
     site: "@thudfactor"
@@ -28,7 +28,7 @@ _The_ Casio VL-Tone. I'd actually forgotten about it.
 
 He says as near as he can remember, he bought it in 1979 while we were living in Nebraska, which explains why I can't really remember a time when we didn't have it. I don't recall us buying it, but I seem to remember it being produced at some point and me falling in love with it. It came with a little book full of songs, and you could play them by pushing the numbered keyboard keys.
 
-So by third grade I was pretty adept at playing the theme from _M*A*S*H_. I also knew the song was called "Suicide is Painless" had knew all the lyrics, which are genuinely cheerful:
+So by third grade I was pretty adept at playing the theme song from _MASH_. I also knew the song was called "Suicide is Painless" had knew all the lyrics, which are genuinely cheerful:
 
 > The sword of time will pierce our skin  
 > It doesn't hurt when it begins  

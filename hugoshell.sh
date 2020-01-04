@@ -1,1 +1,1 @@
-docker run --rm -it -v $(pwd):/src klakegg/hugo:0.60.1-ext-alpine shell
+docker run --rm -it -v $(pwd):/src klakegg/hugo:0.62.1-ext-alpine shell

@@ -1,0 +1,21 @@
+  <div class="page__masthead">
+    <header class="header main-header header--vertical" role="banner">
+      {{ partial "logo.html" . }}
+      {{ partial "nav.html" . }}
+    </header>
+    <div class="teaser">
+      <div class="teaser__content">
+        {{ with .Params.intro }}
+        <h1 class="h2">{{ . }}</h1>
+        {{ end }}
+        {{ with .Params.link }}
+        <a href="{{ .url }}" class="link--button">{{ .title }}</a>
+        {{ end }}
+      </div>
+    </div> 
+    {{ with .Params.hero }}
+      {{ $image := $.Page.Resources.GetMatch .image }}
+      {{ $resized := $image.Fit "2328x1746" }}
+    <img class="page__hero" src="{{ $resized.RelPermalink }}" alt="{{ .alt }}" />
+    {{ end }}
+  </div>

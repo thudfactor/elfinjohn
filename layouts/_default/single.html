@@ -1,28 +1,35 @@
 {{ define "main" }}
 {{ $image := .Resources.GetMatch "cover" }}
-{{ with $image }} 
-  <div class="md:shadow-xl">
+{{ with $image }}  
+  <figure class="coverart relative">
     {{ $small := $image.Fill "320x160" }}
     {{ $med := $image.Fill "640x320" }}
     {{ $lg := $image.Fill "1280x640" }}
     {{ $xl := $image.Fill "2560x1280" }}
+    <div class="md:shadow-xl">
     <img class="block w-full h-auto" 
       src="{{ $small.RelPermalink }}" 
       srcset="
         {{ $small.RelPermalink }} 320w,
         {{ $med.RelPermalink }} 640w,
         {{ $lg.RelPermalink }} 1280w,
-        {{ $xl.RelPermalink }} 2560w,
+        {{ $xl.RelPermalink }} 1800w,
       "
       alt="{{ $image.Params.alt }}" />
-  </div>
+    </div>
+    <figcaption class="absolute bottom-0 inset-x-0 xl:pb-64">
+      <div class="bg-translucent-black text-white 2xl:bg-transparent 2xl:text-black c-container mx-auto p-5 editorial">
+        <span class="text-yellow-400 2xl:text-blue-800 font-display uppercase">Above:</span> {{ $image.Params.caption | markdownify }}
+      </div>
+    </figcaption>
+  </figure>
 {{ end }}
 {{ if $image }}
-<div class="md:-mt-64 relative">
+<div class="xl:-mt-64 relative">
 {{ else }}
 <div>
 {{ end }}
-  <article class="lg:flex bg-white lg:items-start container mx-auto p-10 md:p-20">
+  <article class="lg:flex bg-white lg:items-start c-container mx-auto p-10 md:p-20">
     <div class="lg:flex-none lg:w-1/3 bg-gray-100 p-5 border-b-2 -mx-10 -mt-10 mb-10 lg:m-0 lg:border-b-0 lg:border-r-2">
       {{ if .PublishDate }}
         <div class="mb-1 text-sm italic font-thin text-gray-600">

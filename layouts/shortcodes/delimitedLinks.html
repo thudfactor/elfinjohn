@@ -1,0 +1,7 @@
+{{ $len := .Get "list" }}
+{{ $class := .class }}
+{{ $delimiter := .delimiter }}
+{{ range $i, $e := .list }}
+  <a class="{{ $class }}" href="{{ $e.URL }}">{{ $e.Name }}</a>
+  {{ if ne ( add $i 1 ) $len }} <span class="text-xs font-light leading-12 pl-6 pr-5 align-middle inline-block mb-3"> {{ $delimiter }} </span> {{ end }}
+{{ end }}

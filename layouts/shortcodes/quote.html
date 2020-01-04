@@ -1,0 +1,20 @@
+<div>
+<q>{{ .Get "text" }}</q>
+<div>
+{{ with .Get "image" }}
+{{ $image := $.Page.Resources.GetMatch . }}
+{{ $resized := $image.Fill "238x230" }}
+<div>
+<img src="{{ $resized.RelPermalink }}" alt="{{ $.Params.alt }}" />
+</div>
+{{ end }}
+<div>
+{{ with .Get "cite" }}
+<cite>{{ . }}</cite>
+{{ end }}
+{{ with .Get "title" }}
+<div>{{ . }}</div>
+{{ end }}
+</div>
+</div>
+</div>

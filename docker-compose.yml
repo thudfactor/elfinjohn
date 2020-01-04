@@ -3,7 +3,7 @@ version: '2'
 services:
 
   hugo:
-    image: klakegg/hugo:0.60.1-ext-alpine
+    image: klakegg/hugo:0.62.1-ext-alpine
     volumes:
       - .:/src
     ports: 

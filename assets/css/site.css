@@ -124,12 +124,35 @@
   @apply my-10;
 }
 
-.editorial a {
-  @apply underline font-bold text-orange-700;
+.ln {
+  @apply text-orange-700;
+  box-shadow: #fbd38d 0 -1px 0 inset;
 }
 
-.editorial a:hover {
+.ln:hover {
   @apply text-orange-600;
+}
+
+.ln-dark {
+  @apply text-teal-200;
+  box-shadow: #fbd38d 0 -1px 0 inset;
+}
+
+.ln-dark:hover {
+  @apply text-blue-200;
+}
+
+
+.editorial a {
+  @apply ln;
+}
+
+.coverart figcaption {
+  z-index:50;
+}
+
+.coverart figcaption a {
+  @apply ln-dark;
 }
 
 .bg-paisley-gray {
@@ -139,6 +162,18 @@
 .terminal {
   @apply h-32 m-32 mx-auto text-gray-400;
   transform: rotate(-90deg);
+}
+
+@screen 2xl {
+  .coverart figcaption {
+    @apply pb-0 right-auto max-w-xs;
+    left: 50%;
+    transform: translateX(35.9375rem) translateY(100%);
+  }
+
+  .coverart figcaption a {
+    @apply ln;
+  }
 }
 
 @supports (background-blend-mode: multiply) {

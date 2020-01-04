@@ -1,0 +1,50 @@
+<header class="header main-header bg-primary" role="banner">
+  <div class="relative mx-auto max-w-1440 lg:pl-230 xl:pl-0">
+    <div class="absolute h-150 left-20 md:left-50 xl:left-100 bg-white px-20 py-15 border-solid border-neutral-fade border-b-4">
+      <a href="#">
+        <img src="/images/logo-long19th.svg" class="lg:hidden h-full" alt="Long 19th Century logo" />
+        <img src="/images/logomark-long19th.svg" class="hidden lg:inline h-full"
+          alt="Long 19th Century logo with title" />
+      </a>
+    </div>
+    <div class="container px-0 mr-0 xl:mr-auto xl:pl-264">
+      <div class="flex sm:pr-20 md:pr-50">
+        <a href="#" class="mt-40 mb-30 invisible w-0 lg:visible lg:w-auto">
+          <span class="ic ic--logotext-long19th text-white text-5xl leading-0 hover:text-primary-var"></span>
+        </a>
+        <div class="nav-and-search flex flex-wrap items-center whitespace-no-wrap leading-0 pl-160 pr-20 sm:px-0 ml-auto">
+          <div class="main-menu-wrapper relative sm:static bg-primary sm:bg-primary p-15 sm:p-0 ml-auto z-10">
+            <a class="main-menu-toggler" href="#">
+              <span
+                class="sm:hidden uppercase text-xl font-sans-condensed font-medium leading-24 text-white-fade hover:text-primary-var">Menu</span>
+            </a>
+            <nav class="main-menu hidden absolute left-0 top-full sm:static sm:block bg-primary-dark sm:bg-primary">
+              <ul class="sm:flex">
+                {{ range .Site.Menus.main }}
+                <li
+                  class="text-sm font-sans font-medium leading-30 block p-5 border-white-fade border-b-1 sm:inline sm:uppercase sm:text-lg sm:font-sans-condensed sm:border-0 sm:p-0 sm:mr-15 md:mr-20 xl:mr-40 md:text-xl">
+                  <a class="text-white-fade hover:text-primary-var" href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+              </ul>
+            </nav>
+          </div>
+          <div class="search-menu-wrapper bg-primary whitespace-no-wrap relative px-20 pt-22 pb-18 md:p-18 ml-auto">
+            <a class="search-menu-toggler" href="#">
+              <span class="search-menu-icon ic ic--magnify text-white hover:text-primary-var text-sm md:text-lg"></span>
+            </a>
+            <nav class="search-menu hidden absolute right-0 top-full bg-primary-dark">
+              <ul class="sm:py-10 sm:px-8 xl:py-20 xl:px-15">
+                <li
+                  class="text-sm font-sans font-medium leading-30 block p-5 border-white-fade border-b-1 sm:inline-block sm:font-sans sm:font-semibold sm:text-xs sm:px-25 sm:py-5 sm:mx-5 sm:border-2">
+                  <a class="text-white-fade hover:text-primary-var" href="#">Search Collections</a></li>
+                <li
+                  class="text-sm font-sans font-medium leading-30 block p-5 border-white-fade border-b-1 sm:inline-block sm:font-sans sm:font-semibold sm:text-xs sm:px-25 sm:py-5 sm:mx-5 sm:border-2">
+                  <a class="text-white-fade hover:text-primary-var" href="#">Search Site</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

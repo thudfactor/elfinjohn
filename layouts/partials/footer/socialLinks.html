@@ -1,0 +1,9 @@
+<div class="social-icons flex-three md:pl-30 md:text-right lg:flex-minor  lg:max-w-fourth">
+  {{ range . }}
+    <a class="px-8 inline-flex" href={{ .URL }}>
+      <span class="ic ic--{{ .Pre }} text-social-icon-size text-primary-alt hover:bg-primary-var bg-white inline-flex"></span>
+      <span class="sr-only">{{ .Name }}</span>
+    </a>    
+  {{ end }}
+</div>
+

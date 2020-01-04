@@ -1,0 +1,32 @@
+{{ $config := .Page.Resources.GetMatch (.Get "config") }}
+{{ $links := $config.Params.links }}
+{{ $imgsize := "510x510" }}
+{{ $img := $config.Params.feature.img }}
+{{ $image := .Page.Resources.GetMatch $img }}
+{{ $resized := $image.Fit $imgsize }}
+
+{{ with $config }}
+<div class="mt-45 max-w-900 -mx-60">
+<aside class="flex flex-col lg:flex-row px-30 lg:px-60 bg-quaternary-fade font-sans text-black">
+<div class="py-40 lg:py-75 lg:w-7/12">
+<h3 class="font-sans font-semibold text-lg leading-28">{{ .Title }}</h3>
+{{ .Content }}
+{{ with $links }}
+<div class="mt-20">
+{{ partial "molecules/delimitedLinks"  (dict "delimiter" "/" "class" "text-xs leading-20 font-semibold shadow-link hover:text-tertiary hover:shadow-link-hover" "list" $links ) }}
+</div>
+{{ end }}
+</div>
+<div class="pb-45 lg:w-5/12 lg:pl-75 lg:pt-45 overflow-hidden">
+<figure class="max-w-510 mx-auto">
+{{ with $config.Params.feature }}
+<img class="mx-auto" src="{{ $image.RelPermalink }}" alt="{{ .alt }}">
+{{ with .caption }}
+<figcaption class="font-light italic text-2xs mt-8 lg:mt-15">{{ . }}</figcaption>
+{{ end }}
+</figure>
+{{ end }}
+</div>
+</aside>		
+</div>
+{{ end }}

@@ -1,0 +1,39 @@
+{{ $align := .Get "align" }}
+
+{{ $classes := "" }}
+{{ $imgsize := "500x500" }}
+{{ if eq $align "right" }}
+  {{ $classes = "md:float-right md:ml-60 lg:-mr-60 mt-30 mb-10 md:max-w-316" }}
+{{ else if eq $align "left" }}
+  {{ $classes = "md:float-left md:mr-60 lg:-ml-60 mt-30 mb-10 md:max-w-316" }}
+{{ else }}
+  {{ $classes = "block mt-30 mb-10 -mx-60" }}
+  {{ $imgsize = "1400x1050" }}
+{{ end }}
+
+{{ $img := .Get "src"}}
+{{ $href := .Get "href" }}
+{{ $video := .Get "video" }}
+{{ $alt := .Get "alt" }}
+
+{{ $image := .Page.Resources.GetMatch $img }}
+{{ $resized := $image.Fit $imgsize }}
+
+{{ $imgTitle := "" }}
+{{ if eq $video "true" }}
+  {{ $imgTitle = "Watch this video on the host site." }}
+{{ end }}
+
+<figure class="{{ $classes }}">
+  {{ if $href }}
+  <a href="{{ $href }}" title="{{ $imgTitle }}">
+    <img class="mx-auto" src="{{ $resized.RelPermalink }}" alt="{{ $alt }}">
+  </a>
+  {{ else }}
+  <img class="mx-auto" src="{{ $resized.RelPermalink }}" alt="{{ $alt }}">
+  {{ end }}
+  <figcaption class="font-sans font-light italic text-2xs pt-15">
+    {{ .Inner }}
+  </figcaption>
+</figure>
+

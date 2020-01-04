@@ -1,0 +1,23 @@
+{{/* Load the Quote page resources */}}
+{{ $quotes := .Site.GetPage "/quotes" }}
+{{ $content := $quotes.Resources.GetMatch (.Get "config") }}
+{{ $wrappingClasses := .Get "classes" }}
+
+{{ with $content }}
+  <div class="{{ $wrappingClasses }}">
+    <div class="text-2xl text-center font-light leading-loose">{{ .Content }}</div>
+    {{ if gt (len .Params.cite) 0 }}
+    <div class="flex items-center ">
+      {{ with .Params.image }}
+        {{ $image := $quotes.Resources.GetMatch . }}
+        {{ $resized := $image.Fill "238x230" }}
+        <img class="mr-40" src="{{ $resized.RelPermalink }}" alt="{{ $.Params.alt }}" />
+      {{ end }}
+      <div>
+      {{ delimit .Params.cite "<br>" }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+{{ end }}
+

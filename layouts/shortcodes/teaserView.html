@@ -1,0 +1,49 @@
+{{ $teasers := .Site.GetPage "components/teasers" }}
+{{ $reversed := (cond (eq (.Get "reversed") "true") "order-last" "") }}
+{{ $imgPadding := (cond (eq (.Get "reversed") "true") "lg:pr-50" "lg:pl-50") }}
+{{ $size := .Get "size" }}
+{{ $wrappingClasses := .Get "classes" }}
+
+{{/* Load the teaser configuration */}}
+{{ $content := $teasers.Resources.GetMatch (.Get "config") }}
+{{ $linktitle := $content.Params.linktitle }}
+{{ $linkstyle := $content.Params.linkstyle }}
+{{ $linkhref := $content.Params.href }}
+{{ $alt := $content.Params.alt }}
+{{/* compute things */}}
+
+{{ $teaserClass := "" }}
+{{ $imageSize := "932x618" }}
+
+{{ with $content }}
+
+<div class="flex justify-between flex-col lg:flex-row lg:mx-45 mb-50">
+  {{ with .Params.image }}
+    {{ $image := $teasers.Resources.GetMatch . }}
+    {{ $resized := $image.Fill $imageSize }}
+    <figure class="lg:flex-forty overflow-hidden {{ $reversed }}">
+      <img class="" src="{{ $resized.RelPermalink }}" alt="{{ $alt }}" />
+    </figure>
+  {{ end }}
+  <div class="pb-30 {{ $imgPadding }}">  
+    <div class="teaser    ">
+      <div class="teaser__content">
+        <h3 class="headline-group font-sans">
+          {{ with $content.Params.super }}
+          <span
+            class="headline-group__super font-sans-condensed font-medium text-sm text-neutral leading-24 uppercase block mb-2">{{ . }}</span>
+          {{ end }}
+          <a href="#" class="headline-group__head font-normal text-2xl text-black leading-32 shadow-link hover:text-tertiary hover:shadow-link-hover">{{ .Title }}</a>
+          {{ with $content.Params.sub }}
+          <span class="headline-group__sub italic text-md leading-28 block pt-10">{{ . }}</span>
+          {{ end }}
+        </h3>
+        <div class="text-sm font-sans font-light leading-24 text-black mt-20">
+          {{ $content.Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
