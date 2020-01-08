@@ -1,0 +1,12 @@
+{{ $side := .Get "side" }}
+
+{{ $tw := "" }}
+{{ if eq $side "right" }}
+  {{ $tw = "xl:float-right bg-white font-display xl:w-3/5 text-2xl xl:mt-3 font-light text-gray-600 xl:ml-6 xl:-mr-40 mb-6 border-t-2 pt-4 px-4 border-b-2 border-green-500" }}
+{{ else }}
+  {{ $tw = "float-right font-sans w-2/5 text-2xl ml-6 mb-2 border-t-2  text-gray-600 pt-4 border-b-2 border-green-500" }}
+{{ end }}
+
+<div class="pullquote {{ $tw }}">
+{{ .Inner }}
+</div>

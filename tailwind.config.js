@@ -11,6 +11,12 @@ module.exports = {
       colors: {
         'translucent-white': 'rgba(255,255,255,.8)',
         'translucent-black': 'rgba(0,0,0,.8)'
+      },
+      spacing: {
+        '72': '18rem',
+        '80': '20rem',
+        '88': '22rem',
+        '96': '24rem',
       }
     },
     fluidContainer: {
