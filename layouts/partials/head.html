@@ -14,13 +14,6 @@
   {{ $title := print .Title " | " .Site.Title }}
   {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
 
-  <meta property="og:url"                content="{{ .Permalink }}" />
-  <meta property="og:type"               content="article" />
-  <meta property="og:title"              content="{{ .Title }}" />
-  <meta property="og:description"        content="{{ .Summary }}" />
-  
-
-
   <meta name="twitter:site" content="@elfinjohn">
   <meta name="twitter:creator" content="@elfinjohn">
   <meta name="twitter:title" content="{{ .Title }}">
@@ -30,12 +23,18 @@
   {{ with $image }}
     {{ $xl := $image.Fill "2560x1280" }}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ $xl.RelPermalink }}">
+    <meta name="twitter:image" content="{{ $xl.Permalink }}">
     <meta name="twitter:image:alt" content="{{ $image.Params.alt }}">  
-    <meta property="og:image" content="{{ $xl.RelPermalink }}" />
+    <meta property="og:image" content="{{ $xl.Permalink }}" />
     <meta property="og:image:width" content="2560" />
     <meta property="og:image:height" content="1280" />
   {{ end }}
+
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ .Summary }}" />
+
 
   <title>{{ $title }}</title>
 </head>  
