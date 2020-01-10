@@ -13,6 +13,30 @@
 
   {{ $title := print .Title " | " .Site.Title }}
   {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+
+  <meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+  <meta property="og:type"               content="article" />
+  <meta property="og:title"              content="{{ .Title }}" />
+  <meta property="og:description"        content="{{ .Summary }}" />
+  
+
+
+  <meta name="twitter:site" content="@elfinjohn">
+  <meta name="twitter:creator" content="@elfinjohn">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ .Summary }}">
+
+  {{ $image := .Resources.GetMatch "cover" }}
+  {{ with $image }}
+    {{ $xl := $image.Fill "2560x1280" }}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ $xl.RelPermalink }}">
+    <meta name="twitter:image:alt" content="{{ $image.Params.alt }}">  
+    <meta property="og:image" content="{{ $xl.RelPermalink }}" />
+    <meta property="og:image:width" content="2560" />
+    <meta property="og:image:height" content="1280" />
+  {{ end }}
+
   <title>{{ $title }}</title>
 </head>  
 
