@@ -24,7 +24,7 @@
     </figcaption>
   </figure>
 {{ end }}  {{ if $image }}
-  <div class="md:-mt-24 lg:-mt-64 relative">
+  <div class="md:-mt-24 lg:-mt-64 relative z-50">
   {{ else }}
   <div>
   {{ end }}
@@ -39,7 +39,7 @@
       {{ end }}      
     </h1>
     {{ .Content }}
-    <div>
+    <div class="z-50">
       {{ range .Site.RegularPages }}
       {{ partial "post-loop.html" . }}
       {{ end }}
