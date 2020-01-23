@@ -1,18 +1,21 @@
 ---
 title: Say “hello” to my little synth
-date: 2020-01-04T17:32:35-04:00
-description: Although not particularly versatile as an instrument, the Korg Monotron Delay can make some fun, irritating noises.
-cover: 
-  src: delay.jpg
+date: 2020-01-04T21:32:35.000+00:00
+description: Although not particularly versatile as an instrument, the Korg Monotron
+  Delay can make some fun, irritating noises.
+cover:
+  src: uploads/delay.jpg
   alt: The Korg Monotron Delay, a small box with five tiny knobs and a waveform switch
-  caption: Don’t be fooled by the keyboard; you are never going to get a precise note out of this thing.
+  caption: Don’t be fooled by the keyboard; you are never going to get a precise note
+    out of this thing.
 twitter:
-  card: "summary_large_image"
+  card: summary_large_image
   site: "@thudfactor"
   title: Say Hello to My Little Synth
-  description: Although not particularly versatile as an instrument, the Korg Monotron Delay can make some fun, irritating noises.
----
+  description: Although not particularly versatile as an instrument, the Korg Monotron
+    Delay can make some fun, irritating noises.
 
+---
 <span>I got this Korg Monotron Delay</span> as a Christmas present from my partner. This little device was totally not on my radar, probably because it is so extraordinarily tiny -- just slightly larger than palm-sized.
 
 **Korg calls it a synth** and I guess technically speaking it is, but it’s really a analogue delay effects box. The single-oscillator voice is really just there to provide an audio source to delay in the absence of any other signal. None of the knobs actually change this voice -- they all drive the delay effect.
