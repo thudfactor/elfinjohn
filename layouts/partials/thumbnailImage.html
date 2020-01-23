@@ -3,7 +3,7 @@
     {{ if $image }}
     <div class="md:shadow-xl mb-10 md:m-0 md:float-none md:border-2 flex-none border-gray-400" >
       {{ $small := $image.Fill "240x180" }}
-      <a href="{{ .Permalink }}"><img class="block" src="{{ $small.RelPermalink }}" alt="{{ $image.Params.alt }}" /></a>
+      <a href="{{ .Permalink }}"><img class="block" src="{{ $small.RelPermalink }}" alt="{{ .alt }}" /></a>
     </div>
     {{ end }}
   {{ end }}

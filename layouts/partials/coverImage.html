@@ -15,11 +15,11 @@
         {{ $lg.RelPermalink }} 1280w,
         {{ $xl.RelPermalink }} 1800w,
       "
-      alt="{{ $image.Params.alt }}" />
+      alt="{{ .alt }}" />
     </div>
     <figcaption class="absolute bottom-0 inset-x-0 xl:pb-64">
       <div class="bg-translucent-black text-white 2xl:bg-transparent 2xl:text-black c-container mx-auto p-5 editorial">
-        <span class="text-yellow-400 2xl:text-blue-800 font-display uppercase">Above:</span> {{ $image.Params.caption | markdownify }}
+        <span class="text-yellow-400 2xl:text-blue-800 font-display uppercase">Above:</span> {{ .caption | markdownify }}
       </div>
     </figcaption>
   </figure>
