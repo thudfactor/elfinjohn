@@ -4,10 +4,9 @@ date: 2018-08-18T07:02:26-04:00
 draft: false
 description: Cis white men are losing their grip on the representation of themselves and others in our media. 
 resources:
-    - name: cover
-      src: screech-owl.jpg
-      params:
-        alt: A close-up of a screech owl.
+cover:
+  src: screech-owl.jpg
+  alt: A close-up of a screech owl.
 ---
 
 Yesterday we were watching music on YouTube with our sixth-grader. I've been playing ukulele every now and then, and there's this great video of [Jake Shimabukuro's uke cover of "Get Lucky."](https://www.youtube.com/watch?v=VbTrdj7vPGU). So then we had to watch the original video. And then, so our child who is just becoming somewhat interested in these things could understand who Pharrell Williams was, we watched the music video for "Happy." Somehow I had never seen it before.

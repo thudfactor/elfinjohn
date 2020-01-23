@@ -7,12 +7,10 @@ tags:
     - accessibility
     - headphones
     - hearing loss
-resources:
-    - name: cover
-      src: mph4_angle_web.jpg
-      params:
-        alt: "Promotional shot of the Marantz MPH-4 studio headphones, large over-the-ear style."
-        caption: "Promotional shot of the Marantz MPH-4 studio headphones"
+cover:
+    src: mph4_angle_web.jpg
+    alt: "Promotional shot of the Marantz MPH-4 studio headphones, large over-the-ear style."
+    caption: "Promotional shot of the Marantz MPH-4 studio headphones"
 twitter:
     card: "summary_large_image"
     site: "@thudfactor"

@@ -7,11 +7,10 @@ aliases:
 tags:
     - jazz
 resources:
-    - name: cover
-      src: cover.jpg
-      params:
-        alt: "Black and white photo of Louis Prima"
-        caption: "Louis Prima’s music career spanned four decades."
+cover:
+    src: prima.jpg
+    alt: "Black and white photo of Louis Prima"
+    caption: "Louis Prima’s music career spanned four decades."
 twitter:
     card: "summary_large_image"
     site: "@thudfactor"

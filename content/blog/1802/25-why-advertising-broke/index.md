@@ -3,12 +3,10 @@ title: Marketing abandoned ethics and it’s destroying us
 date: 2018-02-25T07:02:26-04:00
 draft: false
 description: Ad networks, niche targeting, and cost-per-click combine to polarize a nation.
-resources:
-    - name: cover
-      src: island.jpg
-      params:
-        alt: View of a modern shopping complex with dark clouds in the distance.
-        caption: This view high above Pigeon Forge, Tennessee was taken from inside the giant Ferris wheel at The Island, a shopping complex / arcade near Dollywood.
+cover:
+  src: island.jpg
+  alt: View of a modern shopping complex with dark clouds in the distance.
+  caption: This view high above Pigeon Forge, Tennessee was taken from inside the giant Ferris wheel at The Island, a shopping complex / arcade near Dollywood.
 ---
 
 I got my start in advertising. I spent my summers off from Virginia Tech prepping ads to run in the print edition of the _[Bristol Herald Courier](http://www.heraldcourier.com/)_, my hometown paper.

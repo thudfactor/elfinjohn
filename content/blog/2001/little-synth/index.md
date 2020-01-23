@@ -2,12 +2,10 @@
 title: Say “hello” to my little synth
 date: 2020-01-04T17:32:35-04:00
 description: Although not particularly versatile as an instrument, the Korg Monotron Delay can make some fun, irritating noises.
-resources:
-  - name: cover
-    src: delay.jpg
-    params:
-      alt: The Korg Monotron Delay, a small box with five tiny knobs and a waveform switch
-      caption: Don’t be fooled by the keyboard; you are never going to get a precise note out of this thing.
+cover: 
+  src: delay.jpg
+  alt: The Korg Monotron Delay, a small box with five tiny knobs and a waveform switch
+  caption: Don’t be fooled by the keyboard; you are never going to get a precise note out of this thing.
 twitter:
   card: "summary_large_image"
   site: "@thudfactor"

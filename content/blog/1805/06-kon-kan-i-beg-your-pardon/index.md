@@ -8,12 +8,10 @@ aliases:
 tags:
     - synthpop
     - dance
-resources:
-    - name: cover
-      src: cover.jpg
-      params:
-        alt: "Single cover for Kon Kan's 'I Beg Your Pardon', released in 1989."
-        caption: "Detail from Kon Kan's single release for “I Beg Your Pardon.”"
+cover:
+    src: konkan.jpg
+    alt: "Single cover for Kon Kan's 'I Beg Your Pardon', released in 1989."
+    caption: "Detail from Kon Kan's single release for “I Beg Your Pardon.”"
 twitter:
     card: "summary_large_image"
     site: "@thudfactor"
@@ -21,7 +19,7 @@ twitter:
     description: "When I think about music, I think about it in two periods. There’s before Kon Kan, and then there’s after Kon Kan."
 ---
 
-WWhen I think about music, I think about it in two periods. There’s before Kon Kan, and then there’s after Kon Kan.
+When I think about music, I think about it in two periods. There’s before Kon Kan, and then there’s after Kon Kan.
 
 {{% youtube tag="_YO_24AIguU" %}}
 

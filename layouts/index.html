@@ -1,33 +1,4 @@
 {{ define "main" }}
-  {{ $image := .Resources.GetMatch "cover" }}
-{{ with $image }}  
-  <figure class="coverart relative">
-    {{ $small := $image.Fill "320x160" }}
-    {{ $med := $image.Fill "640x320" }}
-    {{ $lg := $image.Fill "1280x640" }}
-    {{ $xl := $image.Fill "2560x1280" }}
-    <div class="md:shadow-xl">
-    <img class="block w-full h-auto" 
-      src="{{ $small.RelPermalink }}" 
-      srcset="
-        {{ $small.RelPermalink }} 320w,
-        {{ $med.RelPermalink }} 640w,
-        {{ $lg.RelPermalink }} 1280w,
-        {{ $xl.RelPermalink }} 1800w,
-      "
-      alt="{{ $image.Params.alt }}" />
-    </div>
-    <figcaption class="absolute bottom-0 inset-x-0 xl:pb-64">
-      <div class="bg-translucent-black text-white 2xl:bg-transparent 2xl:text-black c-container mx-auto p-5 editorial">
-        <span class="text-yellow-400 2xl:text-blue-800 font-display uppercase">Above:</span> {{ $image.Params.caption | markdownify }}
-      </div>
-    </figcaption>
-  </figure>
-{{ end }}  {{ if $image }}
-  <div class="md:-mt-24 lg:-mt-64 relative z-50">
-  {{ else }}
-  <div>
-  {{ end }}
   <div class="c-container mx-auto bg-white p-20">
     <h1>
       {{ with .Params.supertitle }}
@@ -41,7 +12,7 @@
     {{ .Content }}
     <div class="z-50">
       {{ range .Site.RegularPages }}
-      {{ partial "post-loop.html" . }}
+        {{ partial "post-loop.html" . }}
       {{ end }}
     </div>
   </div>

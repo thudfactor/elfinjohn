@@ -9,12 +9,10 @@ tags:
     - music
     - keyboards
     - synth
-resources:
-    - name: cover
-      src: cover.jpg
-      params:
-        alt: "My Casio VL-Tone"
-        caption: Detail photograph of my own personal Casio VL-Tone. 
+cover:
+    src: casio-cover.jpg
+    alt: "My Casio VL-Tone"
+    caption: Detail photograph of my own personal Casio VL-Tone. 
 twitter:
     card: "summary_large_image"
     site: "@thudfactor"
@@ -53,7 +51,7 @@ What you're hearing there is the power of (only!) one VCO (voltage controlled os
 
 So thank you, Dad, for bringing me that VL-Tone (and for buying it in the first place). It's one of the artifacts from my childhood I treasure the most.
 
-![alt text](full.jpg "A less arty, top-down view of the VL-Tone; it doesn't look its age at all.")
+![A less arty, top-down view of the VL-Tone; it doesn't look its age at all.](/uploads/casio-full.jpg "A less arty, top-down view of the VL-Tone; it doesn't look its age at all.")
 
 The junk mail, on the other hand, I probably could use less of.
 

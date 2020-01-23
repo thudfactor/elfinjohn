@@ -2,12 +2,10 @@
 title: What studying the humanities taught me about software development
 date: 2019-05-11T18:56:35-04:00
 description: At its heart, “Agile” is just the technology industry learning how to work like artists.
-resources:
-  - name: cover
-    src: coverLg.jpg
-    params:
-      alt: "My Casio VL-Tone"
-      caption: Detail from Gerhard Richter’s _Breath (Atem)_, on display at the [Milwaukee Art Museum](http://collection.mam.org/details.php?id=609)
+cover:
+  src: humanities.jpg
+  alt: "My Casio VL-Tone"
+  caption: Detail from Gerhard Richter’s _Breath (Atem)_, on display at the [Milwaukee Art Museum](http://collection.mam.org/details.php?id=609)
 twitter:
   card: "summary_large_image"
   site: "@thudfactor"
