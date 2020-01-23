@@ -18,7 +18,7 @@ twitter:
 ---
 <span>I got this Korg Monotron Delay</span> as a Christmas present from my partner. This little device was totally not on my radar, probably because it is so extraordinarily tiny -- just slightly larger than palm-sized.
 
-**Korg calls it a synth** and I guess technically speaking it is, but it’s really a analogue delay effects box. The single-oscillator voice is really just there to provide an audio source to delay in the absence of any other signal. None of the knobs actually change this voice -- they all drive the delay effect.
+**Korg calls it a synth** and I guess technically speaking it is, but it’s really an analogue delay effects box. The single-oscillator voice is really just there to provide an audio source to delay in the absence of any other signal. None of the knobs actually change this voice -- they all drive the delay effect.
 
 {{% pullquote side=right %}}
 To play specific notes on this thing, you’ll have to have very teensy fingers and excellent spatial memory.
@@ -38,7 +38,7 @@ Lucier recorded himself speaking, played the recording back into a mic in the sa
 
 The real revelation was when I used my iPad to pipe Alvin Lucier’s spoken word piece _I Am Sitting in a Room_ into the Monotron Delay. That piece is about the technological degredation of audio over time, and the Delay speeds things up quite a bit. It feels like it was made for breaking vocals.
 
-Anyway, it’s a clever little box and less than $50, so if that sounds like something you’d be interested in it’s certainly no risk to give it a whirl. If you want to hear a few examples, I [posted them on SoundCloud](https://soundcloud.com/elfin-john/sets/this-is-a-bad-idea). 
+Anyway, it’s a clever little box and less than $50, so if that sounds like something you’d be interested in it’s certainly no risk to give it a whirl. If you want to hear a few examples, I [posted them on SoundCloud](https://soundcloud.com/elfin-john/sets/this-is-a-bad-idea).
 
 Lucier’s work is under copyright so instead you get to hear <abbr title="Lyndon Johnson">LBJ</abbr> order pants.
 
