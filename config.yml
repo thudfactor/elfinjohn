@@ -24,6 +24,8 @@ menu:
   main:
   - name: About
     url: /about/
+  - name: Current Work
+    url: /projects/current-projects
   - name: Blog
     url: /blog/
   # name: Projects

@@ -5,7 +5,7 @@ description: Although not particularly versatile as an instrument, the Korg Mono
   Delay can make some fun, irritating noises.
 cover:
   src: delay.jpg
-  alt: The Korg Monotron Delay, a small box with five tiny knobs and a waveform switch
+  alt: The Korg Monotron Delay
   caption: Don’t be fooled by the keyboard; you are never going to get a precise note
     out of this thing.
 twitter:

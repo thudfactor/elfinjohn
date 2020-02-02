@@ -11,7 +11,7 @@
     </h1>
     {{ .Content }}
     <div class="z-50">
-      {{ range .Site.RegularPages }}
+      {{ range where .Site.RegularPages "Section" "blog"  }}
         {{ partial "post-loop.html" . }}
       {{ end }}
     </div>
