@@ -3,9 +3,9 @@
 {{ $classes := "" }}
 {{ $imgsize := "500x500" }}
 {{ if eq $align "right" }}
-  {{ $classes = "md:float-right md:ml-60 lg:-mr-60 mt-30 mb-10 md:max-w-316" }}
+  {{ $classes = "bg-gray-100 px-5 pt-5 pb-1 mb-5 xl:float-right xl:w-88 xl:-mr-48 xl:ml-16 xl:mt-2" }}
 {{ else if eq $align "left" }}
-  {{ $classes = "md:float-left md:mr-60 lg:-ml-60 mt-30 mb-10 md:max-w-316" }}
+  {{ $classes = "aside bg-gray-100 px-5 pt-5 pb-1 mb-5 xl:float-left xl:w-88 xl:-ml-96 xl:mt-2" }}
 {{ else }}
   {{ $classes = "block mt-30 mb-10 -mx-60" }}
   {{ $imgsize = "1400x1050" }}
@@ -16,7 +16,7 @@
 {{ $video := .Get "video" }}
 {{ $alt := .Get "alt" }}
 
-{{ $image := .Page.Resources.GetMatch $img }}
+{{ $image := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" $img ) }}
 {{ $resized := $image.Fit $imgsize }}
 
 {{ $imgTitle := "" }}
@@ -32,7 +32,7 @@
   {{ else }}
   <img class="mx-auto" src="{{ $resized.RelPermalink }}" alt="{{ $alt }}">
   {{ end }}
-  <figcaption class="font-sans font-light italic text-2xs pt-15">
+  <figcaption class="text-sm font-sans leading-relaxed text-gray-700 mt-4">
     {{ .Inner }}
   </figcaption>
 </figure>
