@@ -3,9 +3,10 @@ title: What studying the humanities taught me about software development
 date: 2019-05-11T18:56:35-04:00
 description: At its heart, “Agile” is just the technology industry learning how to work like artists.
 cover:
-  src: humanities.jpg
-  alt: "My Casio VL-Tone"
-  caption: Detail from Gerhard Richter’s _Breath (Atem)_, on display at the [Milwaukee Art Museum](http://collection.mam.org/details.php?id=609)
+  src: patrick-tomasso-books.jpg
+  alt: Open books spread out on a table.
+  caption: Some application development has more in common with artistic creative work than it does engineering. Photo by [Patrick Tomasso](https://unsplash.com/@impatrickt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/Oaqk7qqNh_c).
+
 twitter:
   card: "summary_large_image"
   site: "@thudfactor"
@@ -67,3 +68,4 @@ I am not the only person to have noticed this. In the intervening years, program
 Most programming work isn’t like that. Any interesting software project involves a continuous process of transmuting the unknown into the known. You can’t do that with plans; plans only tell you what you think might happen. You can only find the truth by doing the work.
 
 Craftspeople, musicians, artists, and writers have known this for millennia. It’s no surprise to me that we’re learning this about software as well.
+
