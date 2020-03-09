@@ -40,3 +40,5 @@ fields:
   - type: textarea
     name: description
     label: description
+pages:
+- content/blog/2003/the-problem-you-can-t-see-with-visual-editors.md
