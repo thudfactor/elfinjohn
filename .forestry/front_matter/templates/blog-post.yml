@@ -1,0 +1,42 @@
+---
+label: Blog Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: textarea
+  name: description
+  label: description
+- type: field_group
+  name: cover
+  label: cover
+  fields:
+  - type: file
+    name: src
+    label: src
+  - type: text
+    name: alt
+    label: alt
+  - type: text
+    name: caption
+    label: caption
+- type: field_group
+  name: twitter
+  label: twitter
+  fields:
+  - type: text
+    name: card
+    label: card
+  - type: text
+    name: site
+    label: site
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: description
+    label: description
