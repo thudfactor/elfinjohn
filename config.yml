@@ -12,23 +12,22 @@ params:
 taxonomies:
   tag: tags
 
-# This configures the markdown renderer. We accept all the default 
-# behavior except stripping HTML out of the content. 
-markup: 
+# This configures the markdown renderer. We accept all the default
+# behavior except stripping HTML out of the content.
+markup:
   goldmark:
     renderer:
       unsafe: true
 
-
 menu:
   main:
-  - name: About
-    url: /about/
-  - name: Current Work
-    url: /projects/current-projects
-  - name: Blog
-    url: /blog/
-  # name: Projects
-  # url: /projects/
-  # name: Experiments
-  # url: /experiments/
+    - name: About
+      url: /about/
+    - name: Current Work
+      url: /projects/current-projects
+    - name: Blog
+      url: /blog/
+    # name: Projects
+    # url: /projects/
+    - name: Experiments
+      url: /experiments/
