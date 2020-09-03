@@ -2,24 +2,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   {{ hugo.Generator }}
-
   {{ if .Site.IsServer }}
     {{ partial "inlineStyles.html" . }}
   {{ else }}
     {{ partialCached "inlineStyles.html" . }}
   {{ end }}
-
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
   <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
   <link rel="canonical" href=".">
-
-  <link rel="stylesheet" href="https://use.typekit.net/tpd6zrw.css">
   {{ $title := print .Title " | " .Site.Title }}
   {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
   <title>{{ $title }}</title>
   {{ partial "socialMeta.html" . }}
-  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 </head>  
 
 

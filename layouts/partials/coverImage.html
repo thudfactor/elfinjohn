@@ -1,27 +1,32 @@
+{{ if .Params.cover.src }}
+{{ $image := .Resources.GetMatch .Params.cover.src }}
 {{ with .Params.cover }}
-  {{ $image := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .src ) }}
   {{ if $image }}
   <figure class="coverart relative">
-    {{ $small := $image.Fill "320x160" }}
-    {{ $med := $image.Fill "640x320" }}
-    {{ $lg := $image.Fill "1280x640" }}
-    {{ $xl := $image.Fill "2560x1280" }}
+    {{ $small := $image.Fill "320x160 jpg" }}
+    {{ $med := $image.Fill "640x320 jpg" }}
+    {{ $lg := $image.Fill "1280x640 jpg" }}
+    {{ $xl := $image.Fill "2560x1280 jpg" }}
     <div class="md:shadow-xl">
-    <img class="block w-full h-auto" 
+    <amp-img class="block" 
       src="{{ $small.RelPermalink }}" 
+      height="{{ $small.Height }}"
+      width="{{ $small.Width }}"
+      layout="responsive"
       srcset="
         {{ $small.RelPermalink }} 320w,
         {{ $med.RelPermalink }} 640w,
         {{ $lg.RelPermalink }} 1280w,
         {{ $xl.RelPermalink }} 1800w,
       "
-      alt="{{ .alt }}" />
+      alt="{{ .alt }}"></amp-img>
     </div>
-    <figcaption class="absolute bottom-0 inset-x-0 md:pb-24 lg:pb-64 xl:z-50">
+    <figcaption class="absolute bottom-0 inset-x-0 md:pb-12 lg:pb-32 xl:z-50">
       <div class="bg-translucent-black text-white 2xl:bg-transparent 2xl:text-black c-container mx-auto p-5 editorial">
         <span class="text-yellow-400 2xl:text-blue-800 font-bold font-display uppercase">Above:</span> {{ .caption | markdownify }}
       </div>
     </figcaption>
   </figure>
   {{ end }}
+{{ end }}
 {{ end }}

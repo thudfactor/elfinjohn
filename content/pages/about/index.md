@@ -12,7 +12,7 @@ twitter:
 cover:
   src: john_conference.jpg
   alt: "John speaking at the 2017 EdUI conference in Charlottesville, Virginia"
-  caption: "John speaking at the 2017 EdUI conference in Charlottesville, Virginia"
+  caption: "John presenting on the intersection of responsive design and accessibility (<a href=\"/2018/04/what-responsive-design-can-teach-us-about-accessiblity/\">see the related post</a>). Photo by Katie Gehrt."
 ---
 
 Hi.

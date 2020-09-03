@@ -9,6 +9,8 @@ params:
   homeText: Not really a designer, tbh.
   dateFormat: Jan 2, 2006
 
+relativeURLs: true
+
 taxonomies:
   tag: tags
 
@@ -27,7 +29,7 @@ menu:
       url: /projects/current-projects
     - name: Blog
       url: /blog/
-    - name: Projects
-      url: /projects/
+    # name: Projects
+    # url: /projects/
     - name: Experiments
       url: /experiments/

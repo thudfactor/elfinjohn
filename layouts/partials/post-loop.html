@@ -1,12 +1,12 @@
-<div class="md:flex py-10 justify-between items-start border-b-2 border-gray-200 clearfix">
+<div class="clearfix">
   {{ partial "thumbnailImage.html" . }}
-  <div class="pl-10 flex-auto">
+  <div class="mt-4">
     <h2>
-      <span class="block text-base text-gray-700 italic">{{- .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") -}}</span>
-      <a class="text-3xl font-display font-light ln" href="{{ .Permalink }}">{{ .Title }}</a>
+      <a class="text-2xl font-display leading-tight mb-4 font-light ln" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      
     </h2>
-    <div class="my-5 text-gray-700 text-xl">
-    {{ .Description }}
+    <div class="mt-2 text-gray-700 leading-tight text-lg">
+      <span class="italic">{{- .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") -}}</span> | {{ .Description }}
     </div>
   </div>
 </div>

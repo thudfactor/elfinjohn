@@ -2,8 +2,13 @@
 title: What responsive design can teach us about accessiblity
 date: 2018-04-19T18:56:35-04:00
 description: "Developing for accessibility becomes easier when we stop thinking about disabilities in a clincal fashion."
-
+cover:
+    src: daniel-romero.jpg
+    alt: "A couple of iPads in boxes sitting next to a ruler."
+    caption: "Just as devices have different capabilities, so do people. Photo by <a href='https://unsplash.com/@rmrdnl?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>Daniel Romero</a> on <a href='https://unsplash.com/s/photos/tablets?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>Unsplash</a>"
 ---
+
+<span></span>
 
 _“Every time you try to operate one of these weird black controls that are labelled in black on a black background, a little black light lights up black to let you know you've done it." — Restaurant at the End of the Universe_
 

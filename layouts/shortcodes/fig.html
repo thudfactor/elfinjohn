@@ -16,7 +16,7 @@
 {{ $video := .Get "video" }}
 {{ $alt := .Get "alt" }}
 
-{{ $image := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" $img ) }}
+{{ $image := .Page.Resources.GetMatch $img }}
 {{ $resized := $image.Fit $imgsize }}
 
 {{ $imgTitle := "" }}
@@ -27,10 +27,10 @@
 <figure class="{{ $classes }}">
   {{ if $href }}
   <a href="{{ $href }}" title="{{ $imgTitle }}">
-    <img class="mx-auto" src="{{ $resized.RelPermalink }}" alt="{{ $alt }}">
+    <amp-img layout="responsive" height="{{ $resized.Height }}" width="{{ $resized.Width }}" class="mx-auto" src="{{ $resized.RelPermalink }}" alt="{{ $alt }}"></amp-img>
   </a>
   {{ else }}
-  <img class="mx-auto" src="{{ $resized.RelPermalink }}" alt="{{ $alt }}">
+  <amp-img layout="responsive" height="{{ $resized.Height }}" width="{{ $resized.Width }}" class="mx-auto" src="{{ $resized.RelPermalink }}" alt="{{ $alt }}"></amp-img>
   {{ end }}
   <figcaption class="text-sm font-sans leading-relaxed text-gray-700 mt-4">
     {{ .Inner }}
