@@ -1,12 +1,10 @@
-version: '2'
+version: "2"
 
 services:
-
   hugo:
-    image: klakegg/hugo:0.62.1-ext-alpine
+    image: klakegg/hugo:0.74.3-ext-alpine
     volumes:
       - .:/src
-    ports: 
+    ports:
       - "1313:1313"
     command: server -w --disableFastRender --bind=0.0.0.0
-

@@ -3,17 +3,16 @@
   {{ partial "head.html" . }}  
   <body class="bg-gray-200 font-sans">
     {{ partial "nav.html" . }}
-      <main id="main">
-{{ partial "coverImage.html" . }}
-{{ $contentDivClass := ""}}
-{{ with .Params.cover.src }}
-  {{ $contentDivClass = "md:-mt-24 lg:-mt-64 relative z-25" }}
-{{ end }}
-<div class="{{ $contentDivClass }}">
-
+    <main id="main">
+      {{ partial "coverImage.html" . }}
+      {{ $contentDivClass := ""}}
+      {{ with .Params.cover.src }}
+        {{ $contentDivClass = "md:-mt-24 lg:-mt-64 relative z-25" }}
+      {{ end }}
+      <div class="{{ $contentDivClass }}">
       {{ block "main" . }}{{ end }}
-      </main>
-</div>
+      </div>
+    </main>
     {{ partial "footer.html" }}
   </body>
 </html>
