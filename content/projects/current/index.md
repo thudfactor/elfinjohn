@@ -39,6 +39,8 @@ This amounts to a complete re-implementation with a normalization of the existin
 
 ## Pomona College Museum of Art
 
+Since the main Pomona web presence is migrating from Drupal 7 to Drupal 8, the Pomona Museum has to come with. Unlike the main site, however, the new site is being redesigned to coincide with a new name and a new building on campus. The new site will have a modern, "brutalist" design and has been carefully engineered to automate as much of the content as possible, leaving most of the editorial focus on the museum's events and exhibits where they belong.
+
 ### Built With
 
 - [Drupal 8](http://www.drupal.org) as the CMS.
@@ -49,8 +51,5 @@ This amounts to a complete re-implementation with a normalization of the existin
 
 - [Erin Simmons](https://www.insidenewcity.com/team/view/erin-simmons), project manager
 - [Rusty Segars](https://www.insidenewcity.com/team/view/rusty-segars), designer
-- [John Williams](https://www.insidenewcity.com/team/view/john-williams), developer
+- [John Williams](https://www.insidenewcity.com/team/view/john-williams), developer & content migration
 - [Sarah Wilkes](https://www.insidenewcity.com/team/view/sarah-wilkes), site builder
-
-{{% terminal %}}
-

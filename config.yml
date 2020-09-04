@@ -25,11 +25,13 @@ menu:
   main:
     - name: About
       url: /about/
-    - name: Current Work
-      url: /projects/current-projects
-    - name: Blog
-      url: /blog/
+      weight: 1
     - name: Projects
       url: /projects/
+      weight: 2
     - name: Experiments
       url: /experiments/
+      weight: 3
+    - name: Blog
+      url: /blog/
+      weight: 4
