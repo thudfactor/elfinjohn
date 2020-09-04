@@ -1,8 +1,122 @@
 /* Base - Variables: tailwind-config.js */
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-/* Site Specific */
-@import "site";
-@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
  
+
+.editorial p {
+    @apply font-sans mb-5; 
+  }
+  
+  .editorial b,
+  strong {
+    font-weight: 600;
+  }
+  
+  .editorial p abbr,
+  .editorial p span {
+    font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
+  }
+  
+  .editorial p abbr[title] {
+    border-bottom: black 1px dotted;
+    text-decoration: none;
+  }
+  
+  .editorial blockquote {
+    @apply font-light text-base pl-5 border-l-2 border-gray-300;
+  }
+  
+  .editorial ol {
+    @apply ml-10 mb-5;
+    list-style-type: decimal;
+  }
+  
+  .editorial ul li {
+    @apply ml-10 mb-2;
+    list-style-type: disc;
+  }
+  
+  .editorial hr {
+    @apply my-10;
+  }
+  
+  .ln {
+    @apply text-orange-800;
+    box-shadow: #fbd38d 0 -1px 0 inset;
+  }
+  
+  .ln:hover {
+    @apply text-blue-900;
+  }
+  
+  .ln-dark {
+    @apply text-teal-200;
+    box-shadow: #fbd38d 0 -1px 0 inset;
+  }
+  
+  .ln-dark:hover {
+    @apply text-blue-200;
+  }
+  
+  
+  .editorial a {
+    @apply ln;
+  }
+
+  .editorial b, .editorial em {
+      @apply font-medium;
+  }
+  
+  .editorial h2:not([class]) {
+    @apply font-sans text-4xl font-bold text-gray-700 mb-2;
+  }
+  
+  .editorial h3:not([class]) {
+    @apply font-sans text-2xl font-bold text-gray-700 mb-2 border-blue-200 mt-16 border-b-2;
+  }
+  
+  .editorial h4:not([class]) {
+    @apply font-sans text-xl font-bold text-gray-700 mb-2;
+  }
+  
+  .coverart figcaption {
+    z-index: 50;
+  }
+  
+  .coverart figcaption a {
+    @apply ln-dark;
+  }
+  
+  .bg-paisley-gray {
+    @apply bg-gray-900;
+  }
+  
+  .terminal {
+    @apply h-32 m-32 mx-auto text-gray-400;
+    transform: rotate(-90deg);
+  }
+  
+  @screen 2xl {
+    .coverart figcaption {
+      @apply pb-0 right-auto max-w-xs;
+      left: 50%;
+      transform: translateX(35.9375rem) translateY(100%);
+    }
+  
+    .coverart figcaption a {
+      @apply ln;
+    }
+  }
+  
+  audio {
+    @apply w-full my-2;
+  }
+  
+  @supports (background-blend-mode: multiply) {
+    .bg-paisley-gray {
+      background: #2d3748 url('/img/paisley-low.jpg') scroll no-repeat 50% 50% / cover;
+      background-blend-mode: multiply;
+    }
+  }
  

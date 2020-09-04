@@ -2,9 +2,9 @@
 {{ $permaLink := .Permalink }}
 {{ $.Scratch.Add "path" "/" }}
 {{ $thisPath := "" }}
-<p class="pt-45 pb-15 xl:py-20 font-sans mx-auto max-w-780">
-  <a class="text-xs leading-20 font-semibold shadow-link hover:text-tertiary hover:shadow-link-hover" href="/">Home</a>
-  <span class="text-sm text-neutral font-light leading-12 pl-4 pr-3 align-middle inline-block mb-3"> / </span>
+<p class="font-sans mx-auto">
+  <a class="text-xs" href="/">Home</a>
+  <span class="text-xs font-light px-2"> / </span>
   {{ range $index, $element := split $url "/" }}
     {{ $.Scratch.Add "path" $element }}
       {{ if ne $element "" }}
@@ -12,10 +12,10 @@
       {{ $page := $.Site.GetPage $thisPath }}
       {{ with $page }}
         {{ if ne ( printf "%s/" $thisPath ) $url }}
-          <a class="text-xs leading-20 font-semibold shadow-link hover:text-tertiary hover:shadow-link-hover" href='{{ .Permalink }}'>{{ .Title }}</a>
-          <span class="text-sm text-neutral font-light leading-12 pl-4 pr-3 align-middle inline-block mb-3"> / </span>
+          <a class="text-xs" href='{{ .Permalink }}'>{{ .Title }}</a>
+          <span class="text-xs font-light px-2 inline-block"> / </span>
         {{ else }}
-          <span class="text-xs leading-20">{{ .Title }}</span>
+          <span class="text-xs">{{ .Title }}</span>
         {{ end }}
       {{ end }}
       {{ $.Scratch.Add "path" "/" }}

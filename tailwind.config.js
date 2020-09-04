@@ -2,8 +2,19 @@ module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
   },
-  theme: {
+  purge: {
+    enabled: true,
+    content: [
+      './layouts/**/*.html',
+      './content/**/*.md',  
+    ]
+  },  
+  theme: {    
     extend: {
+      fontFamily: {
+        sans: 'Lato, sans-serif',
+        serif: 'Oswald, serif'
+      },
       screens: {
         'sm': '640px',
         'md': '768px',
@@ -40,15 +51,12 @@ module.exports = {
           'lg':'0'
         }
       }    
-    }
+    },
   },
   variants: {
     borderWidth:['responsive','first','last'],
     backgroundColor:['responsive','hover','focus','odd','even'],
     fluidContaner: ['responsive']
-  },
-  corePlugins: {
-    fontFamily: false
   },  
   plugins: [
     require('tailwindcss-fluid-container')(),

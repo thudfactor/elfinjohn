@@ -7,7 +7,7 @@
       {{ partial "coverImage.html" . }}
       {{ $contentDivClass := ""}}
       {{ with .Params.cover.src }}
-        {{ $contentDivClass = "md:-mt-12 lg:-mt-32 relative z-25" }}
+        {{ $contentDivClass = "md:-mt-12 lg:-mt-32 relative z-50" }}
       {{ end }}
       <div class="{{ $contentDivClass }}">
       {{ block "main" . }}{{ end }}

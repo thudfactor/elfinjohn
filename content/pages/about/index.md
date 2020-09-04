@@ -23,7 +23,7 @@ Oh, Flash. So many people were glad to get rid of it because they thought it wou
 
 Although web development is a technical field, and I have a somewhat technical background, I came into web development through my interest in written language and my experience as a typesetter at the local newspaper. None of my computer science classes ever addressed hypertext or even the online world. The first web site I built for someone not me was the inaugural web site for Virginia Tech's _Silhouette_ literary magazine. My first professional web job was for the same newspaper where I learned how to prepare broadsheet pages for the camera with a razor blade and waxing machine.
 
-I occasionally speak at conferences on topics both technical and process-oriented. I've given several talks on developing web sites with an accessibility mindset, but my most recent talk looks at agile project management processes from a humanities perspective. That talk makes heavy use of the Robert Burns's poem about a mouse and production trivia about the movie _Airplaine!_.
+I occasionally speak at conferences on topics both technical and process-oriented. I've given several talks on developing web sites with an accessibility mindset, but my most recent talk looks at agile project management processes from a humanities perspective. That talk makes heavy use of the Robert Burns's poem about a mouse and production trivia about the movie _Airplane!_.
 
 Since then I've worked for several digital agencies and with organizations like FEMA, AARP, AAAS, and the Library of Congress. For the last twelve years and counting I have worked for (NewCity)[http://www.insidenewcity.com] as a senior developer with many higher education institutions, including my alma mater.
 

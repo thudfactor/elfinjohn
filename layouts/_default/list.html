@@ -2,7 +2,7 @@
   <div class="c-container mx-auto bg-white p-20">
     <h1 class="text-4xl">{{ .Title }}</h1>
     <div class="mt-10 z-50 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-      {{ range where .Site.RegularPages "Section" "blog"  }}
+      {{ range .Pages.ByWeight  }}
         {{ partial "post-loop.html" . }}
       {{ end }}
     </div>
