@@ -1,6 +1,6 @@
 ---
 title: Current Projects
-description: Here are the current projects I am involved with. All of these anticipate a launch 2020.
+description: Here are the current projects I am involved with. All of these anticipate a launch in 2020.
 weight: 1
 cover:
   src: postits.jpg
@@ -36,6 +36,10 @@ This amounts to a complete re-implementation with a normalization of the existin
 - [Matt Gaskey](https://www.insidenewcity.com/team/view/john-williams), developer
 
 {{% terminal %}}
+
+{{% fig align="left" src="museum_before.png" alt="screenshot of the Pomona Museum of Art Drupal 7 site." %}}
+  Screenshot of the Pomona Museum of Art site as it exists in January 2020.
+{{% /fig %}}
 
 ## Pomona College Museum of Art
 

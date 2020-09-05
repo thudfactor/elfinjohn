@@ -1,5 +1,5 @@
 {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "/" }}
-{{ $permaLink := .Permalink }}
+{{ $permaLink := .RelPermalink }}
 {{ $.Scratch.Add "path" "/" }}
 {{ $thisPath := "" }}
 <p class="font-sans mx-auto">
@@ -12,7 +12,7 @@
       {{ $page := $.Site.GetPage $thisPath }}
       {{ with $page }}
         {{ if ne ( printf "%s/" $thisPath ) $url }}
-          <a class="text-xs" href='{{ .Permalink }}'>{{ .Title }}</a>
+          <a class="text-xs" href='{{ .RelPermalink }}'>{{ .Title }}</a>
           <span class="text-xs font-light px-2 inline-block"> / </span>
         {{ else }}
           <span class="text-xs">{{ .Title }}</span>
