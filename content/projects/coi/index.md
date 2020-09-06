@@ -34,7 +34,7 @@ The redesigned site now has a more open design with better responsive behavior a
 
 ### Built With
 
-- [Drupal 8](https://gohugo.io/) in place of a traditional CMS
+- [Drupal 8](https://drupal.org/) as the CMS
 - [Pattern Lab](https://patternlab.io/) for design implementation.
 
 ### Project Team:
