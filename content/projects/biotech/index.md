@@ -1,7 +1,7 @@
 ---
 title: Anonymous Biotech Firm
 description: A long-running engagement with a biotech company involved a lot of interesting work I can only discuss in the most vague terms.
-weight: 4
+weight: 2
 cover: 
   src: bookshelf.jpg
   caption: Sometimes our best work is the work we can’t show. Photo by <a href="https://unsplash.com/@usinglight?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Stefan Steinbauer</a> on <a href="https://unsplash.com/s/photos/secret?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>

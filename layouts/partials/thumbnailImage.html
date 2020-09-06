@@ -2,7 +2,7 @@
 {{ $image := .Page.Resources.GetMatch .Params.cover.src }}
 {{ if $image }}
 <div class="md:shadow-xl mb-10 md:m-0 md:border-2 flex-none border-gray-400" >
-  {{ $small := $image.Fill "240x180" }}
+  {{ $small := $image.Fill "480x240" }}
   <a href="{{ .RelPermalink }}">
     <amp-img 
       layout="responsive" 

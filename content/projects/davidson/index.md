@@ -1,6 +1,7 @@
 ---
 title: Davidson College
 description: A lengthy and very detailed CMS comparison between Drupal and WordPress kicked of this otherwise typical web site overhaul.
+weight: 10
 cover: 
     src: davidson_campus.jpg
     alt: "The campus at Davidson College"
