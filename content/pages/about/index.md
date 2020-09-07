@@ -23,7 +23,7 @@ Oh, Flash. So many people were glad to get rid of it because they thought it wou
 
 Although web development is a technical field, and I have a somewhat technical background, I came into web development through my interest in written language. In high school my favorite class was English. I joined the English academic team in my freshman year -- the first year my school participated in competition -- and was a participant all four years. So of course when I went to college I chose to study Computer Science. 
 
-Computer Science turned out to be a real bummer but I got a close look at the World Wide Web a few years before it went mainstream. I created my own site, then created the first web site for the University's student literary magazine. I maintained that site all four years as well. 
+Computer Science turned out to be a real bummer but I got a close look at the World Wide Web a few years before it went mainstream. I created my own site, then created the first web site for [Silhouette](https://www.silhouette.collegemedia.com/), Virginia Tech's student literary magazine. I maintained that site until graduation. 
 
 My first job after graduation was creating and maintaining the first web site for my hometown newspaper. In order to put stories on line economically (and through a dialup connection) I built a rudimentary content management system using Dave Winer’s [Userland Frontier](http://scripting.com/frontier/beginning/whatFrontierIs.html). I didn't even know what a content management system was. It was 1996. I don't think anyone knew what a content management system was.
 
@@ -39,7 +39,7 @@ As a human person and not a worker bee, I still enjoy reading books. I also enjo
 
 ## About this site
 
-I am a Drupal advocate and a React developer, but this web site uses neither. Why? For the same reason astronauts don't fly rockets to the office. For a less flippant answer, see [my portfolio](http://filmhydra.site:1313/projects/filmhydra/).
+I am a Drupal advocate and a React developer, but this web site uses neither. Why? For the same reason astronauts don't fly rockets to the office. For a less flippant answer, see [my portfolio](/projects/filmhydra/).
 
 
 

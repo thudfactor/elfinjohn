@@ -10,11 +10,20 @@
       {{ end }}      
     </h1>
     {{ .Content }}
-    <div class="mt-10 z-50 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <h2 class="text-4xl font-serif mb-4 mt-10">Work</h2>
+    <div class="mb-10 z-50 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      {{ range where .Site.RegularPages "Section" "projects"  }}
+        {{ partial "post-loop.html" . }}
+      {{ end }}
+    </div>
+    
+    <h2 class="text-4xl font-serif mt-10 mb-4">Overthinking</h2>
+    <div class="mb-10 z-50 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       {{ range where .Site.RegularPages "Section" "blog"  }}
         {{ partial "post-loop.html" . }}
       {{ end }}
     </div>
+    
   </div>
 {{ end }}
 

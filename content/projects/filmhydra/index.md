@@ -8,7 +8,7 @@ cover:
 ---
 
 
-Filmhydra is one of many small websites I have built to host my own writing about topics that interest me. This one is about movies, but I have created (and destroyed) many others. The challenge for me as a writer and as a web developer is I want a system that allows me to focus on writing but _also_ makes it relatively simple for me to tinker with the presentation. And as great as Drupal is for universities and businesses, it's not a fantastic tool for a technically-minded independent producer. 
+[Filmhydra](https://www.filmhydra.com/) is one of many small websites I have built to host my own writing about topics that interest me. This one is about movies, but I have created (and destroyed) many others. The challenge for me as a writer and as a web developer is I want a system that allows me to focus on writing but _also_ makes it relatively simple for me to tinker with the presentation. And as great as Drupal is for universities and businesses, it's not a fantastic tool for a technically-minded independent producer. 
 
 In the quest for something that would let me be a writer when I wanted to write but a developer when I wanted to develop I have tried everything from Moveable Type to SquareSpace, Drupal to Wix. PHP-Nuke? Yes. Textpattern? Multiple times. 
 
