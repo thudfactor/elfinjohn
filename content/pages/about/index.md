@@ -17,7 +17,7 @@ cover:
 
 Hi.
 
-My name is John Williams, and I am a web developer. I have been working professionally on the web since 1996, which I have lived through table-based layouts, perfected the _faux columns_ technique, understand Adobe Flash development a lot more than is useful these days, and still have stress dreams about supporting Internet Explorer 6.
+My name is John Williams, and I am a web developer. ([See my LinkedIn profile](www.linkedin.com/in/elfinjohn)) I have been working professionally on the web since 1996, which I have lived through table-based layouts, perfected the _faux columns_ technique, understand Adobe Flash development a lot more than is useful these days, and still have stress dreams about supporting Internet Explorer 6.
 
 Oh, Flash. So many people were glad to get rid of it because they thought it would eliminate intrusive advertising on the web. How is that working out, I wonder? (I don't actually wonder.)
 
