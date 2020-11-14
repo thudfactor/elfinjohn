@@ -1,6 +1,10 @@
 ---
 title: Experiments
 description: I've always been interested in music but haven't tried making any of it until recently. The following are my distinctly amateur attempts -- I do this because it's fun, not because I am good at it.
+cover:
+  src: jjying.jpg
+  alt: Radiating blue beams of light against a black background
+  caption: Photo by JJ Ying [from Unsplash](https://unsplash.com/photos/fbKDd7R7_24)
 ---
 
 ## Singles
