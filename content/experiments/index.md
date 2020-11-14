@@ -7,6 +7,11 @@ description: I've always been interested in music but haven't tried making any o
 
 These songs were arranged and mixed using Ableton Live, some with bits I wrote and some with a variety of samples and loops.
 
+### Pew Pew
+{{% audio file="pewpew.mp3" %}}
+
+**November 13, 2020** “Pew Pew” is one chord progression played through different instruments using different arpeggiated patterns. It was largely written during an anxiety-filled weekend before the 2020 US Presidential elections. I think… there's a lot of stuff I might do differently next time.
+
 ### Zap Steps Out
 
 {{% audio file="zap_steps_out.mp3" %}}
